@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Haitham - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-gray-100">
+
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <!-- Hamburger Menu Icon (Visible on Mobile) -->
+            <div class="menu-icon" onclick="toggleMenu()"></div>
+            
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Data Scientist</h2>
+                <p>Passionate about transforming data into actionable insights and building innovative solutions 
+                    using machine learning and artificial intelligence.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Haitam.png" alt="Data Scientist">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+            <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+                Hi! I’m Mohamed Haitham, a Data Scientist and Bioinformatics student at the Faculty of AI at Delta University for Science and Technology. I have expertise in Python, Pandas, and machine learning models, and I’m passionate about solving real-world challenges through data-driven solutions.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education" class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-3xl font-bold text-gray-900 mb-8">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="education-item bg-white p-6 rounded-lg shadow-lg">
+                    <p class="font-semibold text-xl text-gray-800">Faculty of Artificial Intelligence, Delta University</p>
+                    <p class="text-gray-600">Bachelor's Degree in Bioinformatics</p>
+                    <p class="text-gray-500 text-sm">2022 - 2026 | New Mansoura, Egypt</p>
+                </div>
+                <div class="education-item bg-white p-6 rounded-lg shadow-lg">
+                    <p class="font-semibold text-xl text-gray-800">Digital Egypt Pioneers Initiative</p>
+                    <p class="text-gray-600">Data Engineering</p>
+                    <p class="text-gray-500 text-sm">2024 | Damietta, Egypt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="section-title text-center text-3xl font-bold text-gray-900 mb-8">Technical Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Machine Learning</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">Neural Networks</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Data Engineering</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">ETL</span>
+                    <span class="skill-tag">Data Warehousing</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Data Visualization</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Matplotlib</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Programming</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Cloud Computing</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Azure</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3 class="text-xl font-semibold mb-3">Libraries/Frameworks</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag">Pandas</span>
+                    <span class="skill-tag">NumPy</span>
+                    <span class="skill-tag">scikit-learn</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Keras</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center text-3xl font-bold text-gray-900 mb-8">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Plant Diseases Detection" class="project-image">
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Plant Diseases Detection and Classification</h3>
+                    <p class="text-gray-600 mb-4">
+                        Built a custom CNN model to accurately identify and classify plant diseases from images, helping farmers catch issues early. Used deep learning to support sustainable agriculture by enabling timely interventions, reducing crop losses, and promoting healthy yields.
+                    </p>
+                    <div class="flex gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                    <a href="https://github.com/mohamedhaitham22/Plant-Diseases-Detection-using-CNN" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="project2.jpeg" alt="Traffic Monitoring" class="project-image">
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Traffic Monitoring and Analysis</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developed a data infrastructure for traffic monitoring and analysis. Created a scalable data warehouse to manage high-volume traffic data and built comprehensive ETL pipelines for data processing.
+                    </p>
+                    <div class="flex gap-2 mb-4">
+                        <span class="tech-tag">Data Engineering</span>
+                        <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Data Warehousing</span>
+                    </div>
+                    <a href="https://github.com/ahmedmohamedabdelsalam/Real-Time-Traffic-Monitoring-and-Analysis" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="flex flex-col space-y-4">
+                    <div class="contact-info">
+                        <span class="font-medium">Email:</span>
+                        <a href="mailto:mo7amed.yamani@gmail.com" class="text-blue-600 hover:text-blue-800">mo7amed.yamani@gmail.com</a>
+                    </div>
+                    <div class="contact-info">
+                        <span class="font-medium">Phone:</span>
+                        <a href="tel:+201018828607" class="text-blue-600 hover:text-blue-800">+201018828607</a>
+                    </div>
+                    <div class="contact-info">
+                        <span class="font-medium">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/mohamed-yamani-48353a255" class="text-blue-600 hover:text-blue-800">Mohamed Haitham</a>
+                    </div>
+                    <div class="contact-info">
+                        <span class="font-medium">GitHub:</span>
+                        <a href="https://github.com/mohamedhaitham22" class="text-blue-600 hover:text-blue-800">mohamedhaitham22</a>
+                    </div>
+                    <div class="contact-info">
+                        <span class="font-medium">Kaggle:</span>
+                        <a href="https://www.kaggle.com/mohamedhaithamyamani" class="text-blue-600 hover:text-blue-800">mohamedhaithamyamani</a>
+                    </div>
+                    <div class="contact-info">
+                        <span class="font-medium">Location:</span>
+                        <span class="text-gray-600">Damietta, Egypt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">© 2024 Mohamed Haitham.</p>
+        </div>
+    </footer>
+</body>
+</html>
