@@ -154,12 +154,17 @@ header.scrolled {
     flex: 1;
 }
 
+.hero-text h1 {
+    font-size: 2.4rem; /* Adjust the size of your name */
+    margin-bottom: 0.5rem; /* Space between name and title */
+}
 .hero-text h2 {
-    font-size: 2.5rem; /* Adjusted for readability */
-    font-weight: bold;
-    color: #ffffff; /* White text */
-    margin-bottom: 1rem;
-    transition: color 0.3s ease;
+    font-size: 1.6rem; /* Adjust the size of your title */
+    margin-top: 0; /* Remove default margin */
+    font-weight: 400; /* Decrease boldness (normal weight) */
+    color: #a0aec0; /* Lighter gray for a subtle look */
+    letter-spacing: 0.05rem; /* Add slight letter spacing for elegance */
+    text-transform: uppercase; /* Optional: Make it uppercase for a professional look */
 }
 
 .hero-text p {
