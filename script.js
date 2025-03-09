@@ -37,5 +37,5 @@ function animateTitle(titles, index = 0) {
 // Titles to animate
 const titles = ["Data Scientist", "Data Engineer"];
 
-// Start the animation when the page loads
-window.onload = () => animateTitle(titles);
+// Start the animation when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => animateTitle(titles));
