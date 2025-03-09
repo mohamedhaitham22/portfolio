@@ -506,6 +506,78 @@ header.scrolled {
     }
 }
 
+/* Experience Section */
+#experience {
+    background: linear-gradient(135deg, #0a192f, #172a45); /* Gradient navy blue */
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+#experience .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    margin-bottom: 2rem;
+}
+
+#experience .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    #experience .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+#experience .experience-item {
+    background-color: rgba(23, 42, 69, 0.8); /* Darker navy blue */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#experience .experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#experience p {
+    color: #ffffff; /* White text */
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+#experience .font-semibold {
+    font-weight: 600;
+    color: #ffffff; /* White text */
+}
+
+#experience .text-sm {
+    font-size: 0.875rem;
+    color: #a0aec0; /* Lighter gray */
+}
+
+@media (max-width: 600px) {
+    #experience .section-title {
+        font-size: 2rem;
+    }
+
+    #experience .experience-item {
+        padding: 1rem;
+    }
+
+    #experience p {
+        font-size: 1rem;
+    }
+}
+
 /* Project Section */
 #projects {
     background: linear-gradient(135deg, #0a192f, #172a45); /* Gradient navy blue */
